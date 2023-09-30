@@ -1,0 +1,283 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content= "IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Personal Portfolio - Payal Maheshwari</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/982cda7147.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Payal.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Development Engineer</p>
+                    <h1>Hi, I am <span>Payal Maheshwari</span><br>Aispiring Software Engineer</h1>
+                </div>
+            </div>
+        </div>
+<!----------------------ABOUT---------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1><br>
+                        <p>
+                            Hi, I’m Payal Maheshwari. 
+                            I am studying Computer Science & Engineering at Vellore Institute of Technology, Vellore.
+                            I’m currently learning Front-end web development and 
+                            I'm a college student seeking an Internship in Software Engineering to strengthen my coding and designing abilities. 
+                            The ability to pay close attention to detail, communicate with others, and be eager to learn are some of my few strengths.
+                            I’m interested in Full stack web development.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-End Development</span>
+                                    <br>HTML, CSS, JavaScript, ReactJS
+                                </li>
+                                <br>
+                                <li><span>Machine Learning</span>
+                                    <br>ANN, CNN, Jupyter, Python
+                                </li>
+                                <br>
+                                <li><span>Data Science</span>
+                                    <br>SQL, Data Visualisation, Tableau, Power-Bi, R Language
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>May, 2023 - July, 2023</span>
+                                    <br><strong>Summer Analyst, Goldman Sachs</strong>
+                                    <br>- Worked on DevOps Kubernetes Deployment of GS Service
+                                    <br>- Gained hands-on experience on Git, JMeter, CI/CD Pipeline, BDLS and Swagger UI
+                                    <br>- Succesfully implemented Site Reliability Engineering (Logging & Monitoring, Autoscaling, Version Management)
+                                    <br>- Achieved the Autoscaling Strategy (Horizontal Pod Autoscaler) which aimed towards the scaling of pods in the cluster
+                                    <br>- Achieved Load Balancing using HTTP Proxy and Deployment Strategy in Kubernetes
+                                </li>
+                                <br>
+                                <li><span>April, 2022 - April, 2023</span>
+                                    <br><strong>Member Secretary, Student Council, VIT - Vellore</strong>
+                                    <br>- Served as the Member Secretary (Foreign) at VIT Vellore, playing a pivotal role in managing student community and their welfare.
+                                    <br>- Collaborated with various departments within the university, including academic departments, admissions, and student affairs, to ensure a seamless experience for students and faculty.
+                                    <br>- Organised an event on Women's Day to appreciate and celebrate the female faculty members. Successfully organised more than 5 outdoor games.
+                                </li>
+                                <br>
+                                <li><span>April, 2022 - April, 2023</span>
+                                    <br><strong>President, Creativity Club, VIT - Vellore</strong>
+                                    <br>- Organised flagship RoboEscape which was rated as the top 8 events in graVITas'22.
+                                    <br>- Led the Creativity Club as President, overseeing a team of juniors and board members, and driving the organization's mission to foster innovation and artistic expression. 
+                                    <br>- Organized and facilitated regular club meetings, ensuring efficient communication and coordination among team members.
+                                    <br>- Successfully organized and executed Takeshi's Castle and Pillow Fight in Riviera'23 which included the participation of International Students.                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024</span>
+                                    <br><strong>Vellore Institute of Technology, Vellore</strong>
+                                    <br>CGPA: 9.31
+                                </li>
+                                <br>
+                                <li><span>April, 2019 - April, 2020</span>
+                                    <br><strong>Unison World School, Dehradun</strong>
+                                    <br>Percentage (ISC): 95.5%
+                                </li>
+                                <br>
+                                <li><span>April, 2017 - April, 2018</span>
+                                    <br><strong>Unison World School, Dehradun</strong>
+                                    <br>Percentage (ICSE): 97.4%
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!----------------------Certifications---------------------->
+        <div id="certifications">
+            <div class="container">
+                <h1 class="sub-title">My Certifications</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-computer"></i>
+                        <h2>Accelerated Computer Science Fundamentals</h2>
+                        <p>
+                            Topics covered by this Specialization include basic object-oriented programming, the analysis of asymptotic algorithmic run times, and the implementation of basic data structures including arrays, hash tables, linked lists, trees, heaps and graphs, as well as algorithms for traversals, rebalancing and shortest paths.                        </p>
+                        <a href="https://coursera.org/verify/specializat ion/9UVVKRXNLUFY">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square-root-variable"></i>
+                        <h2>Mathematics for Machine Learning: Linear Algebra</h2>
+                        <p>
+                            An online non-credit course authorized by Imperial College London and offered through Coursera. Covers the relation of Linear Algebra with Machine Learning Modelling. This course helps to have an intuitive understanding of vectors and matrices that helps to bridge the gap into linear algebra problems, and how to apply these concepts to machine learning.</p>
+                        <a href="https://coursera.org/verify/JPBHGBKE7GDA">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h2>Mathematics for Machine Learning: Multivariate Calculus</h2>
+                        <p>
+                            This course offers a brief introduction to the multivariate calculus required to build many common machine learning techniques. This course intends to offer an intuitive understanding of calculus, as well as the language necessary to look concepts up yourselves when you get stuck.                        </p>
+                        <a href="https://coursera.org/verify/NZJXQNBJ7J9T">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>Introduction to User Experience Design</h2>
+                        <p>
+                            An online non-credit course authorized by Georgia Institute of Technology and offered by Coursera. It covers a detailed study on User Interface and User Experience in the real world while dealing with various applications. Theories and algorithms to follow while designing a user-based application.                         </p>
+                        <a href="https://coursera.org/verify/C3CZU8ZSUMMJ">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cloud"></i>
+                        <h2>Journey to Cloud: Envisioning Your Solution</h2>
+                        <p>
+                            This course describes the role that cloud computing plays in the digital modernization journey of organizations today. It identifies market disruptions brought by cloud adoption in the enterprise and helps to understand the key technical and organizational challenges of cloud adoption.
+                        </p>
+                        <a href="https://www.credly.com/go/foUHTR2V">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Object-Oriented Data Structures in C++</h2>
+                        <p>
+                            Object-oriented programming focuses on encapsulation, inheritance, and polymorphism. With OOP, we can create reusable code, improve code organization and structure, and make code maintenance more manageable. This course acts as building blocks to understand the concepts of programming and Data Structures and Algorithms.                        </p>
+                        <a href="https://coursera.org/verify/XHM97VLR2KEQ">Read More</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+<!----------------------Portfolio---------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>De-Sign-Pher: Indian Sign Language Detection</h3>
+                            <p>
+                                The goal of this project was to build a neural network able to classify which number of the Indian Sign Language (ISL) dataset is being signed, given an image of a signing hand. This project is a first step towards building a possible Indian sign language translator, which can take communication in sign language and translate them into written language. 
+                            </p>
+                            <a href="https://github.com/ysbobde2002/De-Sign-Pher"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Movie Recommender System</h3>
+                            <p>
+                                The primary goal of movie recommendation systems is to filter and predict only those movies that a corresponding user is most likely to want to watch. Recommender systems are a type of machine learning based systems that are used to predict the ratings or preferences of items for a given user.
+                            </p>
+                            <a href="https://github.com/Payal-283/Movie-Recommender-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Resume Builder</h3>
+                            <p>
+                                The goal in this project is to provide a platform that allows its users to create a resume that is specifically tailored to the job they are looking for. Resumes created by our web application can help applicants avoid common formatting errors and omissions of important information. We want to make the difficult job of creating a resume easier for everyone.
+                            </p>
+                            <a href="https://github.com/Payal-283/Resume-Builder"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="work-btn">See More</a>
+            </div>
+        </div>
+<!----------------------Contact---------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i> payalmaheshwari631@gmail.com</p>
+                        <p> <i class="fa-solid fa-square-phone"></i> +91-9455835154</p>
+                        <div class="social-icons">
+                            <a href="payal.maheshwari2020@vitstudent.ac.in"><i class="fa-regular fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/payal-maheshwari4/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/payal-maheshwari4/"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://leetcode.com/PayalMaheshwari/"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                        <a href="images/Resume (July, 2023).pdf" download class="download-btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name= "Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder= "Your Email" required> 
+                            <textarea name="Message" rows="6" placeholder="Your Messiage"></textarea>
+                            <button type="submit" class="download-btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Payal Maheshwari. All Rights Reserved.</p>
+            </div>
+        </div>
+        <script>
+            var tabLinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tabLinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            function closemenu()
+            {
+                document.getElementById("sidemenu").style.right="-200px";
+            }
+            function openmenu()
+            {
+                document.getElementById("sidemenu").style.right="0";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwF_8mBX_YRD1cs_6yojaCJ4TiDO-b1oP4ABhNNMa7Z4sJ4RqxdtYqEwT0FZXQ4nZl46g/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById('msg')
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML='Your response has been submitted!'
+                    setTimeout(function(){msg.innerHTML=''}, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body> 
+</htm1>
